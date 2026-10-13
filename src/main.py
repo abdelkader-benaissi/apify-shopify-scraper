@@ -150,9 +150,9 @@ async def scrape_store(session: AsyncSession, store: str,
             except Exception as exc:
                 Actor.log.warning(f'Skipping unparsable product on {store}: {exc}')
                 continue
-            # Charge only after the product parsed successfully — never on failure.
-            await charge_event(EVENT_PRODUCT)
+            # Push first, charge only after successful delivery — never on failure.
             await Actor.push_data(item)
+            await charge_event(EVENT_PRODUCT)
             scraped += 1
         if len(products) < PAGE_LIMIT:
             break

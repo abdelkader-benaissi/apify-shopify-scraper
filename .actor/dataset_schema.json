@@ -100,12 +100,15 @@
         ]
       },
       "tags": {
-        "description": "Product tags as returned by the store.",
+        "description": "Product tags as returned by the store (list).",
         "title": "Tags",
         "type": [
-          "string",
+          "array",
           "null"
-        ]
+        ],
+        "items": {
+          "type": "string"
+        }
       },
       "title": {
         "description": "Product title.",
