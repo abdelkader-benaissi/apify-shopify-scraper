@@ -1,0 +1,1 @@
+{"actorOutputSchemaVersion":1,"description":"Product catalog rows scraped from Shopify stores.","properties":{"dataset":{"description":"Dataset with one row per scraped product: title, price, variants, availability, images and URLs.","template":"{{links.apiDefaultDatasetUrl}}/items","title":"Products","type":"string"}},"title":"Shopify Scraper output"}

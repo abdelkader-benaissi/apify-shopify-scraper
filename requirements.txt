@@ -1,0 +1,7 @@
+# Apify SDK + Chrome-impersonating HTTP client.
+# `apify` is installed explicitly because the base image does not guarantee it.
+# HTTP-only actor, no browser — but plain Python HTTP clients (httpx/urllib)
+# are blocked by Cloudflare bot detection (TLS fingerprinting) on many Shopify
+# stores, so we use curl_cffi with Chrome TLS impersonation instead.
+apify
+curl-cffi
