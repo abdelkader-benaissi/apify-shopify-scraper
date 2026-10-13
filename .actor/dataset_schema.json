@@ -5,7 +5,10 @@
       "available": {
         "description": "True if any variant is in stock.",
         "title": "Available",
-        "type": "boolean"
+        "type": [
+          "boolean",
+          "null"
+        ]
       },
       "compareAtPrice": {
         "description": "First variant compare-at price, when set.",
@@ -26,7 +29,10 @@
       "handle": {
         "description": "Product handle used in the storefront URL.",
         "title": "Handle",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "imageUrl": {
         "description": "First product image URL.",
@@ -47,12 +53,18 @@
       "productId": {
         "description": "Shopify product ID.",
         "title": "Product ID",
-        "type": "integer"
+        "type": [
+          "integer",
+          "null"
+        ]
       },
       "productType": {
         "description": "Shopify product type.",
         "title": "Product type",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "productUrl": {
         "description": "Public storefront URL of the product.",
@@ -65,7 +77,10 @@
       "publishedAt": {
         "description": "When the product was published.",
         "title": "Published at",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "sku": {
         "description": "First variant SKU, when set.",
@@ -79,27 +94,42 @@
         "description": "Store domain the product was scraped from.",
         "example": "allbirds.com",
         "title": "Store",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "tags": {
         "description": "Product tags as returned by the store.",
         "title": "Tags",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "title": {
         "description": "Product title.",
         "title": "Title",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       },
       "variantsCount": {
         "description": "Number of variants of the product.",
         "title": "Variants",
-        "type": "integer"
+        "type": [
+          "integer",
+          "null"
+        ]
       },
       "vendor": {
         "description": "Product vendor.",
         "title": "Vendor",
-        "type": "string"
+        "type": [
+          "string",
+          "null"
+        ]
       }
     },
     "type": "object"
